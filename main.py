@@ -108,7 +108,7 @@ async def main():
             tasks[new_task] = proxy
 
 def remove_proxy_from_list(proxy):
-    with open("/path/to/file/proxy.txt", "r+") as file:
+    with open("proxy.txt", "r+") as file:
         lines = file.readlines()
         file.seek(0)
         for line in lines:
